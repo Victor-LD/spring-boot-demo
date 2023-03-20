@@ -9,9 +9,9 @@ public class SpringBootDemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext apc = SpringApplication.run(SpringBootDemoApplication.class, args);
-		for (String s: apc.getBeanDefinitionNames()) {
-			System.out.println(s);
-		}
+//		for (String s: apc.getBeanDefinitionNames()) {
+//			System.out.println(s);
+//		}
 	}
 
 }
