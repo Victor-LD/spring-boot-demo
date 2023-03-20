@@ -8,24 +8,24 @@ import org.springframework.stereotype.Component;
 public class ExampleBeanPostProcessor implements BeanPostProcessor {
 
     public ExampleBeanPostProcessor() {
-        System.out.println("Example BeanPostProcessor created!");
+//        System.out.println("Example BeanPostProcessor created!");
     }
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName)
             throws BeansException {
-        System.out.println("Before init: ");
-        System.out.println("Bean class: " + bean.getClass());
-        System.out.println("Bean name: " + beanName);
+//        System.out.println("Before init: ");
+//        System.out.println("Bean class: " + bean.getClass());
+//        System.out.println("Bean name: " + beanName);
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName)
             throws BeansException {
-        System.out.println("After init: ");
-        System.out.println("Bean class: " + bean.getClass());
-        System.out.println("Bean name: " + beanName);
+//        System.out.println("After init: ");
+//        System.out.println("Bean class: " + bean.getClass());
+//        System.out.println("Bean name: " + beanName);
         return bean;
     }
 }
