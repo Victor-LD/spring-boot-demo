@@ -29,7 +29,7 @@ public class CatController {
         return new Cat(counter.incrementAndGet(), breed, name, "Neutral", "...");
     }
 
-    @PutMapping("/pet")
+    @PutMapping(value = "/pet", consumes = "application/json", produces = "application/json")
     public Cat petCat(@RequestBody Cat cat) {
         logger.info("Cat has been petted");
         catService.interactWith(cat);
